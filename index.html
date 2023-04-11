@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D Visualization and editing</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div
+            id="stage"
+            style="
+                cursor: pointer;
+                overflow: hidden;
+                width: 336px;
+                height: 280px;
+            "
+        >
+            <div id="c0" class="c-hv" style="text-align: center">
+                <img
+                    class="rel"
+                    style="width: 200px"
+                    src="./assets/images/logo.svg"
+                />
+                <div
+                    class="os-b txt purple rel"
+                    style="
+                        font-size: 27.9px;
+                        line-height: 0.9em;
+                        margin-top: 0.4em;
+                        text-align: center;
+                        white-space: nowrap;
+                    "
+                >
+                    Standaard<br />heel compleet
+                </div>
+            </div>
+
+            <div id="content" style="width: 100%; height: 100%">
+                <img class="f-wh" src="./assets/images/bg.jpg" />
+                <div
+                    class="os-xb txt"
+                    style="
+                        top: 16px;
+                        left: 19px;
+                        font-size: 23.3px;
+                        line-height: 1.1em;
+                        letter-spacing: -0.03em;
+                    "
+                >
+                    GLASVEZEL &amp;<br />
+                    TV COMPLEET
+                </div>
+
+                <div class="f-wh" style="perspective: 268px; font-size: 10px">
+                    <div
+                        id="cards"
+                        style="
+                            bottom: 28.3%;
+                            left: 56.8%;
+                            transform-style: preserve-3d;
+                        "
+                    >
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div
+                        id="orange"
+                        style="
+                            left: 12%;
+                            bottom: 26.3%;
+                            transform: translate3d(29%, 0, -100px);
+                        "
+                    >
+                        <div
+                            class="rel card"
+                            style="
+                                width: 11em;
+                                transform: translate3d(0, -20%, 0)
+                                    rotateY(26deg) rotateX(12deg);
+                            "
+                        >
+                            <img
+                                class="rel"
+                                style="width: 11em"
+                                src="./assets/images/orange-sticker.png"
+                            />
+                        </div>
+                        <img
+                            class="shadow"
+                            style="
+                                width: 13.2em;
+                                bottom: 0;
+                                left: -9.7%;
+                                transform-origin: 50% 100%;
+                                transform: rotateX(90deg) rotateZ(-19deg);
+                                opacity: 0.5;
+                            "
+                            src="./assets/images/card-shadow.png"
+                        />
+                    </div>
+
+                    <div
+                        id="red"
+                        style="
+                            left: 12%;
+                            bottom: 26.3%;
+                            transform: translate3d(15%, 0, 15px);
+                        "
+                    >
+                        <div
+                            class="rel card"
+                            style="
+                                transform-origin: 50% 100%;
+                                transform: translate3d(0, -20%, 0)
+                                    rotateY(26deg) rotateX(12deg);
+                            "
+                        >
+                            <img
+                                class="rel"
+                                style="width: 11em"
+                                src="./assets/images/red-sticker.png"
+                            />
+                        </div>
+                        <img
+                            class="shadow"
+                            style="
+                                width: 13.2em;
+                                bottom: 0;
+                                left: -9.7%;
+                                transform-origin: 50% 100%;
+                                transform: rotateX(90deg) rotateZ(-19deg);
+                                opacity: 0.5;
+                            "
+                            src="./assets/images/card-shadow.png"
+                        />
+                    </div>
+
+                    <svg
+                        id="plus"
+                        style="
+                            width: 3.1em;
+                            left: 24.7%;
+                            bottom: 39%;
+                            filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.4));
+                        "
+                        viewBox="0 0 500 500"
+                    >
+                        <circle fill="#fff" cx="250" cy="250" r="158.18" />
+                        <path
+                            fill="#652d86"
+                            d="m233.96,266.41h-56.69v-32.08h56.69v-57.13h32.08v57.13h56.69v32.08h-56.69v56.4h-32.08v-56.4Z"
+                        />
+                    </svg>
+
+                    <div
+                        id="box"
+                        style="
+                            bottom: 26.3%;
+                            left: 54.8%;
+                            transform: rotateY(-51deg);
+                            transform-style: preserve-3d;
+                        "
+                    >
+                        <div
+                            class="box rel"
+                            style="
+                                transform-style: preserve-3d;
+                                transform-origin: 0 100%;
+                            "
+                        >
+                            <img
+                                class="rel"
+                                style="width: 10.4em"
+                                src="./assets/images/box-front.png"
+                            />
+                            <div
+                                style="
+                                    bottom: 0;
+                                    left: 100%;
+                                    width: 9.4em;
+                                    height: 100%;
+                                    background: #808080;
+                                    transform-origin: 0 50%;
+                                    transform: rotateY(98deg);
+                                "
+                            ></div>
+                        </div>
+                        <img
+                            style="
+                                width: 15.2em;
+                                bottom: 0;
+                                left: -22.7%;
+                                transform-origin: 50% 100%;
+                                transform: rotateX(90deg) scaleY(1.8)
+                                    skewX(12deg);
+                                opacity: 0.5;
+                            "
+                            src="./assets/images/box-shadow.png"
+                        />
+                    </div>
+                </div>
+
+                <div
+                    id="f0"
+                    class="f-wh"
+                    style="
+                        clip-path: polygon(
+                            0% 100%,
+                            0% -6.6%,
+                            100% 0%,
+                            100% 100%,
+                            0% 100%
+                        );
+                    "
+                >
+                    <div class="f-wh" style="background-color: #fff"></div>
+                </div>
+
+                <div
+                    id="cta"
+                    class="shp"
+                    style="
+                        bottom: 15px;
+                        right: 16px;
+                        width: 132px;
+                        height: 28px;
+                    "
+                >
+                    <span
+                        class="os-xb"
+                        style="
+                            margin-left: 0.28em;
+                            font-size: 15.7px;
+                            letter-spacing: -0.04em;
+                            line-height: 1em;
+                        "
+                        >BESTEL DIRECT</span
+                    >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16.07 27.13"
+                        style="width: 7.2px; margin-right: 3px"
+                    >
+                        <path d="m2.5,2.5l10.17,11.06L2.5,24.63" />
+                    </svg>
+                </div>
+
+                <img
+                    id="logo"
+                    class="o"
+                    style="bottom: 17px; left: 21px; width: 126px"
+                    src="./assets/images/logo.svg"
+                />
+            </div>
+            <div id="border"></div>
+        </div>
+        <script src="js/gsap.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
